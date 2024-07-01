@@ -1,12 +1,16 @@
 import Filter from "../components/Filter";
-import '../styles/products.css'
+import ViewProducts from "../components/ViewProducts";
+import "../styles/products.css";
 
 function Products() {
   return (
     <div className="container mg-top">
-      <aside className="filter">
-        <Filter />
-      </aside>
+      <div className="section-products">
+        <aside className="filter">
+          <Filter />
+        </aside>
+        <ViewProducts />
+      </div>
     </div>
   );
 }

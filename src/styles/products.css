@@ -5,3 +5,8 @@
 .mg-top{
     margin-top: 2rem;
 }
+
+.section-products{
+    display: flex;
+    gap: 2rem;
+}

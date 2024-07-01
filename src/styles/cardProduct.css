@@ -1,0 +1,25 @@
+.card{
+    position: relative;
+    background-color: #fff;
+    width: 17rem;
+    border-radius: 1rem;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.card-footer{
+    box-shadow: 0px -10px 14px -8px rgba(0,0,0,0.2);
+}
+
+.btn{
+    color: #0348B7;
+}

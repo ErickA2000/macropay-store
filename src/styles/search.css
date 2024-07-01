@@ -1,0 +1,12 @@
+.search{
+    width: 30rem;
+}
+
+.options{
+    background-color: #7D879C;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.ant-input-affix-wrapper{
+    border-radius: 3rem 0 0 3rem;
+}
