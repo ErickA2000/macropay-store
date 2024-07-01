@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import "../styles/header.css";
-import NavHeader from "./NavHeader";
+import NavHeader from "./atoms/NavHeader";
 
 function Header() {
   return (

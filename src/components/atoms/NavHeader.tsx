@@ -1,7 +1,7 @@
 import type { MenuProps } from "antd";
 import { Menu } from 'antd';
 import { useState } from "react";
-import '../styles/navHeader.css'
+import '../../styles/navHeader.css'
 
 type MenuItem = Required<MenuProps>['items'][number];
 

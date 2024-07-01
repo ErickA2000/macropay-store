@@ -72,3 +72,7 @@ button:focus-visible {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.text-color-blue{
+  color: #0348B7;
+}
