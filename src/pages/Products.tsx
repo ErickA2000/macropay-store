@@ -5,12 +5,20 @@ import "../styles/products.css";
 function Products() {
   return (
     <div className="container mg-top">
-      <div className="section-products">
+      <section className="section-products">
         <aside className="filter">
           <Filter />
         </aside>
         <ViewProducts />
-      </div>
+      </section>
+
+      <section>
+        <h3>Ofertas y Promociones</h3>
+      </section>
+
+      <section>
+        <h3>Nuestros Productos Más Vendidos</h3>
+      </section>
     </div>
   );
 }

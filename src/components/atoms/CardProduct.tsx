@@ -14,9 +14,17 @@ function CardPRoduct({ device }: Props) {
 
   return (
     <div className="card">
-      <HeartOutlined className="heart-icon" />
+      <div className="content-image">
+        <HeartOutlined className="heart-icon" />
 
-      <img src={device.images[0]} alt={device.shortTitle} />
+        <img src={device.images[0]} alt={device.shortTitle} />
+
+        {device.discount != 0 && (
+          <div className="discount">
+            <p>{device.discount}%</p>
+          </div>
+        )}
+      </div>
 
       <div className="card-footer">
         <section className="title-rate">
