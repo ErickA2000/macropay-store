@@ -1,0 +1,105 @@
+.img-100{
+    width: 100%;
+}
+
+.content-img{
+    width: 10rem;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+
+    .price{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        color: #0348B7;
+    }
+
+    .text{
+        width: 15rem;
+
+        p{
+            color: gray;
+        }
+
+        p>span{
+            font-weight: bold;
+        }
+    }
+}
+
+/* .content-subtotal{
+    margin-bottom: 1rem;
+} */
+
+.subtotal{
+    display: flex;
+    justify-content: space-around;
+
+    .price{
+        color: #0348B7;
+        margin-left: .5rem;
+    }
+
+    p{
+        color: gray;
+    }
+}
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon{
+        font-size: 4rem;
+    }
+
+    .mg-0{
+        margin: 0;
+    }
+    
+    .mg-top{
+        margin-top: .2rem;
+        font-weight: 600;
+    }
+
+    .fees{
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .btn-credit{
+        height: 3rem;
+        color: #0348B7;
+    }
+
+    .buy-cash{
+        color: #0348B7;
+        cursor: pointer;
+    }
+}
+
+.or{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    p{
+        color: gray;
+        font-style: italic;
+    }
+
+    .line{
+        background-color: gray;
+        width: 3rem;
+        height: 3px;
+        border-radius: 2rem;
+        opacity: 50%;
+    }
+}

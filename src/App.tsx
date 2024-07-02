@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import { ROUTES } from "./routes/routes";
+// import Footer from "./components/Footer";
 
 const router = createBrowserRouter(ROUTES);
 
@@ -16,6 +17,7 @@ function App() {
       }}>
       <Header />
       <RouterProvider router={router}></RouterProvider>
+      {/* <Footer/> */}
     </ConfigProvider>
   );
 }

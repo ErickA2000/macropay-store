@@ -1,0 +1,9 @@
+.content-footer{
+    position: relative;
+    margin-top: 10rem;
+}
+
+.svg-front{
+    position: absolute;
+    bottom: 0;
+}
