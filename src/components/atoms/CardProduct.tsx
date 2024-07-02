@@ -1,7 +1,8 @@
 import { HeartOutlined } from "@ant-design/icons";
+import { Button, Rate } from "antd";
+import CurrencyFormat from "react-currency-format";
 import "../../styles/cardProduct.css";
 import { Device } from "../../interfaces/device.interface";
-import { Button, Rate } from "antd";
 
 interface Props {
   device: Device;
@@ -18,24 +19,51 @@ function CardPRoduct({ device }: Props) {
       <img src={device.images[0]} alt={device.shortTitle} />
 
       <div className="card-footer">
-        <section>
-          <p>{device.shortTitle}</p>
-          <Rate disabled defaultValue={device.rate} />
-          <p>$120 p/semana</p>
-          <p>0 $520 p/mes</p>
+        <section className="title-rate">
+          <div className="content-title-rate">
+            <p className="short-title">{device.shortTitle}</p>
+            <Rate disabled defaultValue={device.rate} />
+          </div>
+
+          <div className="content-fees">
+            <p className="fees">$120 p/semana</p>
+            <p className="fees">0 $520 p/mes</p>
+          </div>
         </section>
 
-        <section>
-          {device.discount == 0 && <h4>{device.price}</h4>}
-
-          {device.discount != 0 && (
-            <div>
-              <h4>{discountPrice}</h4>
-              <p>{device.price}</p>
-            </div>
+        <section className="price-buy">
+          {device.discount == 0 && (
+            <CurrencyFormat
+              className="price"
+              value={device.price}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix="$"
+            />
           )}
 
-          <Button type="primary" className="btn">Lo Quiero!</Button>
+          {device.discount != 0 && (
+            <>
+              <CurrencyFormat
+                className="price"
+                value={discountPrice}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix="$"
+              />
+              <CurrencyFormat
+                className="old-price"
+                value={device.price}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix="$"
+              />
+            </>
+          )}
+
+          <Button type="primary" className="btn">
+            Lo Quiero!
+          </Button>
         </section>
       </div>
     </div>

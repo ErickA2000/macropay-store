@@ -1,15 +1,21 @@
 import CardPRoduct from "./atoms/CardProduct";
 import Search from "./atoms/Search";
 import { devices } from "../constants/devices";
+import { Device } from "../interfaces/device.interface";
+import '../styles/viewProducts.css';
 
-function ViewProducts(){
-    return (
-        <div>
-            <Search/>
+function ViewProducts() {
+  return (
+    <div className="content">
+      <Search />
 
-            <CardPRoduct device={devices[0]}/>
-        </div>
-    );
+      <div className="cards">
+        {devices.map((device: Device) => {
+          return <CardPRoduct device={device} key={device.shortTitle}/>;
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default ViewProducts;

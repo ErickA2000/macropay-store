@@ -1,0 +1,19 @@
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    max-height: 50rem;
+}
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
