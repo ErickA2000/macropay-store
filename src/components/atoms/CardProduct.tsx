@@ -5,16 +5,22 @@ import "../../styles/cardProduct.css";
 import { Device } from "../../interfaces/device.interface";
 import ModalProduct from "../ModalProduct";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   device: Device;
 }
 
 function CardPRoduct({ device }: Props) {
+  const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
+
   const discount = device.discount / 100;
   const discountPrice = device.price - device.price * discount;
 
-  const [openModal, setOpenModal] = useState(false);
+  const handleNavigate = (id: number) => {
+    navigate(`/products/${id}`);
+  };
 
   return (
     <>
@@ -22,7 +28,12 @@ function CardPRoduct({ device }: Props) {
         <div className="content-image">
           <HeartOutlined className="heart-icon" />
 
-          <img src={device.images[0]} alt={device.shortTitle} className="img" />
+          <img
+            src={device.images[0]}
+            alt={device.shortTitle}
+            className="img"
+            onClick={() => handleNavigate(device.id)}
+          />
 
           {device.discount != 0 && (
             <div className="discount">
@@ -34,7 +45,11 @@ function CardPRoduct({ device }: Props) {
         <div className="card-footer">
           <section className="title-rate">
             <div className="content-title-rate">
-              <p className="short-title">{device.shortTitle}</p>
+              <p
+                className="short-title"
+                onClick={() => handleNavigate(device.id)}>
+                {device.shortTitle}
+              </p>
               <Rate disabled defaultValue={device.rate} />
             </div>
 
@@ -89,9 +104,8 @@ function CardPRoduct({ device }: Props) {
         footer
         onCancel={() => setOpenModal(false)}
         centered
-        className="modal"
-        >
-        <ModalProduct data={device} discountPrice={discountPrice}/>
+        className="modal">
+        <ModalProduct data={device} discountPrice={discountPrice} />
       </Modal>
     </>
   );

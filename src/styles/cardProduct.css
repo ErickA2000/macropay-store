@@ -65,6 +65,7 @@
 .short-title{
     margin: 0;
     font-size: .9rem;
+    cursor: pointer;
 }
 
 .title-rate{
