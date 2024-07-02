@@ -1,4 +1,5 @@
 import Filter from "../components/Filter";
+import TopSelling from "../components/TopSelling";
 import ViewProducts from "../components/ViewProducts";
 import "../styles/products.css";
 
@@ -18,6 +19,8 @@ function Products() {
 
       <section>
         <h3>Nuestros Productos Más Vendidos</h3>
+
+        <TopSelling/>
       </section>
     </div>
   );

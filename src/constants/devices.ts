@@ -2,6 +2,7 @@ import { Device } from "../interfaces/device.interface";
 
 export const devices: Device[] = [
   {
+    id: 1,
     shortTitle: "Samsung A10S",
     longTitle: "Samsung A10S 13+2MP 64GB, 4GB RAM",
     images: [
@@ -23,6 +24,7 @@ export const devices: Device[] = [
     componentsIncluded: "Audifonos, Cargador y Manual de usuario",
   },
   {
+    id: 2,
     shortTitle: "Samsung Galaxy S21",
     longTitle: "Samsung Galaxy S21 64MP 128GB, 8GB RAM",
     images: [
@@ -45,6 +47,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cargador, Manual de usuario",
   },
   {
+    id: 3,
     shortTitle: "Samsung Galaxy Note 20",
     longTitle: "Samsung Galaxy Note 20 108MP 256GB, 12GB RAM",
     images: [
@@ -67,6 +70,7 @@ export const devices: Device[] = [
     componentsIncluded: "S Pen, Cargador, Manual de usuario",
   },
   {
+    id: 4,
     shortTitle: "Samsung Galaxy A52",
     longTitle: "Samsung Galaxy A52 64MP 128GB, 6GB RAM",
     images: [
@@ -90,6 +94,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cargador, Manual de usuario",
   },
   {
+    id: 5,
     shortTitle: "iPhone 12",
     longTitle: "Apple iPhone 12 12MP 64GB, 4GB RAM",
     images: [
@@ -111,6 +116,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
   },
   {
+    id: 6,
     shortTitle: "iPhone 12 Pro",
     longTitle: "Apple iPhone 12 Pro 12MP 128GB, 6GB RAM",
     images: [
@@ -133,6 +139,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
   },
   {
+    id: 7,
     shortTitle: "iPhone 13",
     longTitle: "Apple iPhone 13 12MP 128GB, 4GB RAM",
     images: [
@@ -155,6 +162,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
   },
   {
+    id: 8,
     shortTitle: "iPhone 13 Pro Max",
     longTitle: "Apple iPhone 13 Pro Max 12MP 256GB, 6GB RAM",
     images: [
@@ -177,6 +185,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
   },
   {
+    id: 9,
     shortTitle: "Xiaomi Mi 11",
     longTitle: "Xiaomi Mi 11 108MP 256GB, 8GB RAM",
     images: [
@@ -199,6 +208,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cargador, Manual de usuario",
   },
   {
+    id: 10,
     shortTitle: "Xiaomi Redmi Note 10",
     longTitle: "Xiaomi Redmi Note 10 48MP 128GB, 4GB RAM",
     images: [
@@ -221,6 +231,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cargador, Manual de usuario",
   },
   {
+    id: 11,
     shortTitle: "Xiaomi Mi 10",
     longTitle: "Xiaomi Mi 10 108MP 256GB, 8GB RAM",
     images: [
@@ -243,6 +254,7 @@ export const devices: Device[] = [
     componentsIncluded: "Cargador, Manual de usuario",
   },
   {
+    id: 12,
     shortTitle: "Xiaomi Poco X3",
     longTitle: "Xiaomi Poco X3 64MP 128GB, 6GB RAM",
     images: [

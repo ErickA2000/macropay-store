@@ -1,0 +1,6 @@
+.top-selling{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}

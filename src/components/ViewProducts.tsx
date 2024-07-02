@@ -11,7 +11,7 @@ function ViewProducts() {
 
       <div className="cards">
         {devices.map((device: Device) => {
-          return <CardPRoduct device={device} key={device.shortTitle}/>;
+          return <CardPRoduct device={device} key={device.id}/>;
         })}
       </div>
     </div>

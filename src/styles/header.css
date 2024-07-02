@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    margin-right: 6rem;
+    margin-right: 10%;
 
     .btn-register{
         padding-top: 1.5rem;
