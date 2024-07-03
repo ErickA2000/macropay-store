@@ -2,6 +2,7 @@ import Filter from "../components/Filter";
 import TopSelling from "../components/TopSelling";
 import ViewProducts from "../components/ViewProducts";
 import "../styles/products.css";
+import { devices } from "../constants/devices";
 
 function Products() {
   return (
@@ -20,7 +21,9 @@ function Products() {
       <section>
         <h3>Nuestros Productos Más Vendidos</h3>
 
-        <TopSelling/>
+        <TopSelling
+          devices={[devices[0], devices[4], devices[2], devices[6]]}
+        />
       </section>
     </div>
   );

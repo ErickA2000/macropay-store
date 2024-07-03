@@ -7,7 +7,7 @@ export const devices: Device[] = [
     longTitle: "Samsung A10S 13+2MP 64GB, 4GB RAM",
     images: [
       "https://www.clevercel.co/cdn/shop/products/samsung-galaxy-a10s_691103b2-9791-4e60-9898-9486df687c23_1800x.png?v=1621301788",
-      "https://images.samsung.com/is/image/samsung/latin-feature-a-comfortable-design-that-shines-187009531?$FB_TYPE_B_JPG$"
+      "https://images.samsung.com/is/image/samsung/latin-feature-a-comfortable-design-that-shines-187009531?$FB_TYPE_B_JPG$",
     ],
     price: 3499,
     rate: 4,
@@ -22,6 +22,8 @@ export const devices: Device[] = [
     quantity: 5,
     specialFeatures: "Resistente al agua",
     componentsIncluded: "Audifonos, Cargador y Manual de usuario",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.",
   },
   {
     id: 2,
@@ -30,7 +32,7 @@ export const devices: Device[] = [
     images: [
       "https://image-us.samsung.com/us/smartphones/galaxy-s21/Gallery-images-Palette/O1-Grey/PDP-O1-Grey-lockup-01-1600x1200.jpg?$bu-pim-components-mobile-jpg$",
       "https://atlas-content-cdn.pixelsquid.com/stock-images/samsung-galaxy-s21-smartphone-040nNK3-600.jpg",
-      "https://wefix.co.za/cdn/shop/files/Galaxy-S21-5G-Pink.png?v=1690794005"
+      "https://wefix.co.za/cdn/shop/files/Galaxy-S21-5G-Pink.png?v=1690794005",
     ],
     price: 9999,
     rate: 4.5,
@@ -45,6 +47,7 @@ export const devices: Device[] = [
     quantity: 10,
     specialFeatures: "Cámara de alta resolución, 5G",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 3,
@@ -53,7 +56,7 @@ export const devices: Device[] = [
     images: [
       "https://w7.pngwing.com/pngs/276/503/png-transparent-galaxy-note-20-ultra.png",
       "https://png.pngtree.com/png-clipart/20200809/ourlarge/pngtree-samsung-galaxy-note-20-mockup-mystic-bronze-color-editable-psd-front-png-image_2323314.jpg",
-      "https://images.samsung.com/us/smartphones/galaxy-note20/pdp/gallery/canvas2/Black/Gallery-01-C2-Lockup-MysticBlack-1600x1200.jpg?$product-details-thumbnail-png$"
+      "https://images.samsung.com/us/smartphones/galaxy-note20/pdp/gallery/canvas2/Black/Gallery-01-C2-Lockup-MysticBlack-1600x1200.jpg?$product-details-thumbnail-png$",
     ],
     price: 13999,
     rate: 4.8,
@@ -68,6 +71,7 @@ export const devices: Device[] = [
     quantity: 7,
     specialFeatures: "S Pen, 5G",
     componentsIncluded: "S Pen, Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 4,
@@ -77,7 +81,7 @@ export const devices: Device[] = [
       "https://imei.org/storage/files/images/7548/preview/samsung-galaxy-a52-5g-1.png",
       "https://storage.comprasmartphone.com/smartphones/samsung-galaxy-a52-5g.png",
       "https://images.samsung.com/is/image/samsung/p6pim/latin/galaxy-a52/feature/latin-feature---397355321?$FB_TYPE_A_MO_JPG$",
-      "https://static.vecteezy.com/system/resources/previews/035/572/091/original/samsung-galaxy-a23-back-transparent-free-png.png"
+      "https://static.vecteezy.com/system/resources/previews/035/572/091/original/samsung-galaxy-a23-back-transparent-free-png.png",
     ],
     price: 7999,
     rate: 4.6,
@@ -92,6 +96,7 @@ export const devices: Device[] = [
     quantity: 12,
     specialFeatures: "Resistencia al agua, 5G",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 5,
@@ -114,6 +119,7 @@ export const devices: Device[] = [
     quantity: 8,
     specialFeatures: "5G, Magsafe",
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 6,
@@ -122,7 +128,7 @@ export const devices: Device[] = [
     images: [
       "https://i.pinimg.com/originals/8b/ab/3c/8bab3ce82f9a713ea1af739a99a9a440.png",
       "https://i0.wp.com/gearz.lk/wp-content/uploads/2021/09/12prosilv.png?fit=700%2C800&ssl=1",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8t3M1qAJeRS5oiEAN5LJ1ZVF5E2G44iyIHw&usqp=CAU"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8t3M1qAJeRS5oiEAN5LJ1ZVF5E2G44iyIHw&usqp=CAU",
     ],
     price: 17999,
     rate: 4.9,
@@ -137,6 +143,7 @@ export const devices: Device[] = [
     quantity: 5,
     specialFeatures: "5G, LiDAR Scanner",
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 7,
@@ -145,7 +152,7 @@ export const devices: Device[] = [
     images: [
       "https://pngimg.com/d/iphone_13_PNG31.png",
       "https://i.pngimg.me/thumb/f/720/570e218087db409a8ab4.jpg",
-      "https://www.pngall.com/wp-content/uploads/11/iPhone-13-PNG-Photos.png"
+      "https://www.pngall.com/wp-content/uploads/11/iPhone-13-PNG-Photos.png",
     ],
     price: 17999,
     rate: 4.8,
@@ -160,6 +167,7 @@ export const devices: Device[] = [
     quantity: 10,
     specialFeatures: "5G, Magsafe",
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 8,
@@ -168,7 +176,7 @@ export const devices: Device[] = [
     images: [
       "https://media.karousell.com/media/photos/products/2022/7/4/iphone_13_at_your_choice_1656903965_56dc969f_progressive",
       "https://www.pngall.com/wp-content/uploads/11/iPhone-13-Pro-Max.png",
-      "https://freebiehive.com/wp-content/uploads/2023/11/Apple-iPhone-13-Pro-Colors-PNG.jpg"
+      "https://freebiehive.com/wp-content/uploads/2023/11/Apple-iPhone-13-Pro-Colors-PNG.jpg",
     ],
     price: 22999,
     rate: 4.9,
@@ -183,6 +191,7 @@ export const devices: Device[] = [
     quantity: 7,
     specialFeatures: "5G, ProMotion, LiDAR Scanner",
     componentsIncluded: "Cable USB-C a Lightning, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 9,
@@ -191,7 +200,7 @@ export const devices: Device[] = [
     images: [
       "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1612767059.44259254.png",
       "https://i.blogs.es/d49002/mi11azul/1366_2000.jpg",
-      "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/mi_11_2.png"
+      "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/mi_11_2.png",
     ],
     price: 9999,
     rate: 4.5,
@@ -206,6 +215,7 @@ export const devices: Device[] = [
     quantity: 10,
     specialFeatures: "Cámara de alta resolución, 5G",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 10,
@@ -214,7 +224,7 @@ export const devices: Device[] = [
     images: [
       "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1614652750.39695368.png",
       "https://i.blogs.es/3a3421/xiaomi-redmi-note-10-0/1366_2000.jpeg",
-      "https://www.acis.org.co/portal/sites/default/files/Redmi%20Note%2010%20Pro%20%281%29%20%281%29_1.png"
+      "https://www.acis.org.co/portal/sites/default/files/Redmi%20Note%2010%20Pro%20%281%29%20%281%29_1.png",
     ],
     price: 6999,
     rate: 4.3,
@@ -229,6 +239,7 @@ export const devices: Device[] = [
     quantity: 15,
     specialFeatures: "Carga rápida, 5G",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 11,
@@ -237,7 +248,7 @@ export const devices: Device[] = [
     images: [
       "https://i01.appmifile.com/webfile/globalimg/Cambridge/800-800/F4/Green-800x800.png",
       "https://imei.org/storage/files/images/10371/preview/xiaomi-mi-10-5g-1.png",
-      "https://www.profesionalreview.com/wp-content/uploads/2020/03/Mi-10_19.png"
+      "https://www.profesionalreview.com/wp-content/uploads/2020/03/Mi-10_19.png",
     ],
     price: 8999,
     rate: 4.6,
@@ -252,6 +263,7 @@ export const devices: Device[] = [
     quantity: 12,
     specialFeatures: "Carga rápida, 5G",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
   {
     id: 12,
@@ -260,7 +272,7 @@ export const devices: Device[] = [
     images: [
       "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1616553974.64767577.png",
       "https://i01.appmifile.com/webfile/globalimg/products/pc/poco-x3-nfc/specs-header.png",
-      "https://keshvarikala.com/wp-content/uploads/2021/02/xiaomi-poco-x3-1-1.jpg"
+      "https://keshvarikala.com/wp-content/uploads/2021/02/xiaomi-poco-x3-1-1.jpg",
     ],
     price: 6499,
     rate: 4.5,
@@ -275,5 +287,6 @@ export const devices: Device[] = [
     quantity: 20,
     specialFeatures: "Pantalla 120Hz, Carga rápida",
     componentsIncluded: "Cargador, Manual de usuario",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis fringilla eros eu ornare. Etiam felis ligula, tincidunt non tellus sit amet, interdum congue erat. Aenean sagittis eget massa nec porttitor. Ut in vulputate arcu. Vestibulum quam nisi, fringilla laoreet libero eu, efficitur consequat libero. Nullam molestie metus quis turpis porta, vitae tempus nisl pellentesque. Pellentesque sit amet efficitur ex. Integer commodo, ex at ultricies pretium, metus neque consequat eros, quis sagittis lacus nulla pharetra nisl. Phasellus auctor sapien massa, pellentesque placerat urna tempor eget. Sed rutrum convallis dictum. Aliquam erat volutpat. Curabitur vehicula quis est sit amet aliquam. Proin pellentesque rutrum sodales. Etiam semper ac odio iaculis blandit. Nulla lectus sapien, molestie ac ex in, posuere tincidunt metus. Duis posuere nulla in ligula finibus fringilla.`,
   },
 ];

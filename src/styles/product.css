@@ -4,3 +4,144 @@
     gap: 1rem;
     margin-top: 1rem;
 }
+
+.section-basic-info{
+    display: flex;
+    gap: 1rem;
+
+    .right-content{
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+
+        .right-content__title-rate{
+            text-align: left;
+
+            h2{
+                font-weight: 200;
+            }
+        }
+
+        .price-payment-method{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .price{
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: #0348B7;
+            }
+        
+            .old-price{
+                text-decoration: line-through;
+                color: gray;
+            }
+
+            .card-img{
+                width: 10rem;
+            }
+        }
+    }
+
+    .description{
+        text-align: left;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+
+    .description-more{
+        display: block;
+    }
+
+    .description-no-more{
+        display: -webkit-box;
+    }
+
+    .more{
+        color: #0348B7;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .content-security-card{
+        display: flex;
+        justify-content: flex-end;
+
+        .security{
+            background: #D3D8E0;
+            border-radius: .5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            padding: .5rem;
+    
+            .icon{
+                font-size: 2rem;
+            }
+    
+            .text{
+                margin: 0;
+                text-align: left;
+            }
+    
+            .text-1{
+                font-weight: bold;
+            }
+    
+            .text-2{
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .promotion{
+        color: red;
+        font-size: .7rem;
+        text-align: right;
+    }
+}
+
+.today-credit{
+    display: flex;
+    align-items: center;
+
+    .circle{
+        width: 8rem;
+        height: 8rem;
+        position: relative;
+        
+        .front{
+            width: 100%;
+            height: 100%;
+            background: #FFD300;
+            border-radius: 100%;
+            align-content: center;
+
+            p{
+                margin: 0 auto;
+            }
+        }
+
+        .back{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #0348B7;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: -5%;
+            z-index: -1;
+        }
+    }
+
+    .week-pay{
+        .front{
+            width: 10rem;
+            height: 7rem;
+            background-color: #0348B7;
+            border-radius: 87% 9% 4% 5% / 50% 10% 10% 18% ;
+        }
+    }
+}

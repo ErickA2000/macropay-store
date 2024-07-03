@@ -16,4 +16,5 @@ export interface Device {
   quantity: number;
   specialFeatures: string;
   componentsIncluded: string;
+  description: string;
 }

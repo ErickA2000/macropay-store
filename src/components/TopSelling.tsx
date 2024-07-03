@@ -1,9 +1,12 @@
-import { devices } from "../constants/devices";
 import { Device } from "../interfaces/device.interface";
 import CardPRoduct from "./atoms/CardProduct";
 import '../styles/topSelling.css';
 
-function TopSelling(){
+interface Props {
+    devices: Device[];
+}
+
+function TopSelling({ devices }: Props) {
     return (
         <div className="top-selling">
             {
