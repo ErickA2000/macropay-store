@@ -42,7 +42,11 @@ function Product() {
       </section>
 
       <section>
-        <ViewImgs images={device.images} title={device.shortTitle}/>
+        <ViewImgs
+          images={device.images}
+          title={device.shortTitle}
+          discount={device.discount}
+        />
       </section>
 
       <section></section>
