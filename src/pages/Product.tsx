@@ -12,6 +12,7 @@ import ViewImgs from "../components/atoms/ViewImgs";
 import { useState } from "react";
 import { RightCircleOutlined, SecurityScanOutlined } from "@ant-design/icons";
 import DetailDevice from "../components/DetailDevice";
+import ApplyCredit from "../components/ApplyCredit";
 
 function Product() {
   const { id } = useParams();
@@ -204,6 +205,7 @@ function Product() {
         <h3 className="title-detail">Información Detallada del Producto</h3>
 
         <DetailDevice device={device}/>
+        <ApplyCredit/>
       </section>
 
       <section></section>
