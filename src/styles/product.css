@@ -262,6 +262,14 @@
     }
 }
 
+.section-details{
+    margin-top: 2rem;
+
+    .title-detail{
+        text-align: left;
+    }
+}
 .mg-0{
     margin: 0;
 }
+

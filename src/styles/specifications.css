@@ -1,0 +1,22 @@
+.container-specifications{
+    width: 100%;
+}
+.specification{
+    display: flex;
+    /* padding: 15px; */
+
+    .flex-1{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: .5rem;
+
+        &:first-child{
+            max-width: 300px;
+        }
+    }
+
+    .text-bold{
+        font-weight: bold;
+    }
+}

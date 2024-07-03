@@ -11,6 +11,7 @@ import "../styles/product.css";
 import ViewImgs from "../components/atoms/ViewImgs";
 import { useState } from "react";
 import { RightCircleOutlined, SecurityScanOutlined } from "@ant-design/icons";
+import DetailDevice from "../components/DetailDevice";
 
 function Product() {
   const { id } = useParams();
@@ -199,7 +200,11 @@ function Product() {
         </div>
       </section>
 
-      <section></section>
+      <section className="section-details">
+        <h3 className="title-detail">Información Detallada del Producto</h3>
+
+        <DetailDevice device={device}/>
+      </section>
 
       <section></section>
     </div>
