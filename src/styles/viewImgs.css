@@ -30,13 +30,17 @@
 
 .selected-img{
     position: relative;
-    width: 30rem;
+    width: 25rem;
     background-color: #fff;
     border-radius: 2rem;
+    height: 100%;
+    align-content: center;
+    max-height: 40rem;
 
     img{
         width: 100%;
         border-radius: 2rem;
+        margin: 0 auto;
     }
 }
 

@@ -8,6 +8,7 @@
 .section-basic-info{
     display: flex;
     gap: 1rem;
+    margin-top: 2rem;
 
     .right-content{
         display: flex;
@@ -63,6 +64,7 @@
         color: #0348B7;
         font-style: italic;
         text-align: left;
+        cursor: pointer;
     }
 
     .content-security-card{
@@ -108,7 +110,7 @@
     align-items: center;
 
     .circle{
-        width: 8rem;
+        width: 10rem;
         height: 8rem;
         position: relative;
         
@@ -121,27 +123,145 @@
 
             p{
                 margin: 0 auto;
+                font-size: 3rem;
+                font-weight: bold;
+                color: #0348B7;
             }
         }
 
         .back{
-            width: 100%;
-            height: 100%;
-            border: 1px solid #0348B7;
-            border-radius: 100%;
             position: absolute;
-            top: 0;
-            left: -5%;
-            z-index: -1;
+            top: -8%;
+            left: -10%;
+
+            circle{
+                fill: none;
+                stroke-width: 1;
+                transform: rotate(70deg);
+                transform-origin: 50%;
+                stroke-dasharray: 60 100;
+                stroke: #0348B7;
+            }
         }
     }
 
     .week-pay{
+        position: relative;
+        left: -4%;
+        z-index: -1;
+        margin-bottom: 2rem;
+        max-width: 10rem;
+
         .front{
-            width: 10rem;
-            height: 7rem;
-            background-color: #0348B7;
-            border-radius: 87% 9% 4% 5% / 50% 10% 10% 18% ;
+            width: 100%;
+            --p: 60px; /* control the shape (can be percentage) */
+            height: 150px;
+            aspect-ratio: 1.2;
+            clip-path: polygon(0 var(--p),100% 0,100% 100%,0 100%);
+            background: #0348B7;
+            border-radius: 1rem;
+            align-content: end;
+
+            .text{
+                color: white;
+                padding-right: 1rem;
+                padding-bottom: .5rem;
+
+                .text-1{
+                    font-size: .5rem;
+                    text-align: center;
+                }
+
+                .text-2{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    text-align: right;
+                }
+
+                .text-3{
+                    font-size: .9rem;
+                    text-align: right;
+                }
+            }
+        }
+
+        .dots{
+            display: flex;
+            justify-content: flex-end;
+            gap: .2rem;
+            margin-right: 1rem;
+            margin-top: .2rem;
+        }
+
+        .back{
+            border: 1px solid black;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 1rem;
+            transform: rotate(-20deg);
+            position: absolute;
+            top: 16%;
+            z-index: -1;
+            display: flex;
+            justify-content: flex-end;
+            gap: .2rem;
+            padding-right: .5rem;
+            padding-top: .1rem;
+
+        }
+
+        .dot{
+            width: 6px;
+            height: 6px;
+            background: #0348B7;
+            border-radius: 100%;
         }
     }
+
+    .steps{
+        width: 100%;
+
+        .content-steps{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1rem;
+            background: white;
+            border-radius: 1rem;
+            padding: 1rem;
+    
+            .separator {
+                height: 15px;
+                aspect-ratio: cos(30deg);
+                clip-path: polygon(0 0, 100% 50%, 0 100%);
+                background: #FFD300;
+              }
+    
+    
+            .number{
+                background: #4B566B;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 100%;
+                align-content: center;
+                color: white;
+            }
+        }
+
+        .btn-container{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 1rem;
+
+            .btn-step{
+                color: #0348B7;
+                font-size: 1.2rem;
+                padding: 1.2rem;
+            }
+        }
+    }
+}
+
+.mg-0{
+    margin: 0;
 }

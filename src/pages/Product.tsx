@@ -10,7 +10,7 @@ import { devices } from "../constants/devices";
 import "../styles/product.css";
 import ViewImgs from "../components/atoms/ViewImgs";
 import { useState } from "react";
-import { SecurityScanOutlined } from "@ant-design/icons";
+import { RightCircleOutlined, SecurityScanOutlined } from "@ant-design/icons";
 
 function Product() {
   const { id } = useParams();
@@ -135,12 +135,64 @@ function Product() {
               <div className="front">
                 <p>HOY</p>
               </div>
-              <div className="back"></div>
+              <svg width="150" height="150" className="back">
+                <circle r="70" cx="50%" cy="50%" pathLength="100" />
+              </svg>
             </div>
 
             <div className="week-pay">
               <div className="front">
+                <div className="text">
+                  <p className="mg-0 text-1">DESDE</p>
+                  <p className="mg-0 text-2">$196</p>
+                  <p className="mg-0 text-3">SEMANAL</p>
+                </div>
+              </div>
+              <div className="dots">
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+              </div>
 
+              <div className="back">
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+              </div>
+            </div>
+
+            <div className="steps">
+              <div className="content-steps">
+                <section className="step">
+                  <div className="number">1</div>
+                  <p>Aplica a tu crédito</p>
+                </section>
+
+                <section className="separator"></section>
+
+                <section className="step">
+                  <div className="number">2</div>
+                  <p>Verifica tu compra</p>
+                </section>
+
+                <section className="separator"></section>
+
+                <section className="step">
+                  <div className="number">3</div>
+                  <p>Disfruta tu celular</p>
+                </section>
+              </div>
+
+              <div className="btn-container">
+                <Button
+                  className="btn-step"
+                  icon={<RightCircleOutlined />}
+                  type="primary"
+                  iconPosition="end">
+                  LO QUIERO A CRÉDITO!
+                </Button>
               </div>
             </div>
           </section>
