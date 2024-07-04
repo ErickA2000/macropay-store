@@ -98,7 +98,7 @@ function Filter({ onChange }: Props) {
         <section className="section-filter">
           <h5 className="text-color-blue">Reviews</h5>
 
-          <Rate value={rate} onChange={setRate} />
+          <Rate value={rate} onChange={setRate} allowHalf/>
         </section>
 
         <hr />

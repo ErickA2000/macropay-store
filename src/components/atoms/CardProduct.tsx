@@ -50,7 +50,7 @@ function CardPRoduct({ device }: Props) {
                 onClick={() => handleNavigate(device.id)}>
                 {device.shortTitle}
               </p>
-              <Rate disabled defaultValue={device.rate} />
+              <Rate disabled defaultValue={device.rate} allowHalf/>
             </div>
 
             <div className="content-fees">
