@@ -1,0 +1,43 @@
+.gap-0{
+    gap: 0;
+}
+
+.selector-credit{
+    position: relative;
+    img{
+        width: 100%;
+    }
+
+    .selector{
+        width: 37%;
+        height: 75%;
+        border-radius: 1rem;
+        position: absolute;
+        top: 15%;
+        right: 16%;
+        align-content: center;
+
+        .content-slider{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .text-09{
+            font-size: .9rem;
+        }
+
+        .text-05{
+            font-size: .5rem;
+        }
+
+        .text-left{
+            text-align: left;
+        }
+
+        .btn{
+            font-size: larger;
+            margin-top: .5rem;
+            padding: 1.5rem;
+        }
+    }
+}

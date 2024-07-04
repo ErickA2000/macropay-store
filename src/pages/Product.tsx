@@ -13,6 +13,7 @@ import { useState } from "react";
 import { RightCircleOutlined, SecurityScanOutlined } from "@ant-design/icons";
 import DetailDevice from "../components/DetailDevice";
 import ApplyCredit from "../components/ApplyCredit";
+import TopSelling from "../components/TopSelling";
 
 function Product() {
   const { id } = useParams();
@@ -205,10 +206,14 @@ function Product() {
         <h3 className="title-detail">Información Detallada del Producto</h3>
 
         <DetailDevice device={device}/>
-        <ApplyCredit/>
+        <ApplyCredit images={[device.images[0], device.images[1]]}/>
       </section>
 
-      <section></section>
+      <section>
+        <h3>Productos Relacionados</h3>
+
+        <TopSelling devices={[devices[0], devices[3], devices[7], devices[8]]}/>
+      </section>
     </div>
   );
 }

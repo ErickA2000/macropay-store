@@ -76,3 +76,7 @@ button:focus-visible {
 .text-color-blue{
   color: #0348B7;
 }
+
+.mg-0-auto{
+  margin: 0 auto;
+}
