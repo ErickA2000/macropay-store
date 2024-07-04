@@ -1,6 +1,6 @@
 import { Button, Flex, Input, Space } from "antd";
 import "../styles/footer.css";
-import { SendOutlined } from "@ant-design/icons";
+import { FacebookFilled, InstagramOutlined, LinkedinFilled, SendOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import FaceImg from "./atoms/FaceImg";
 
 function Footer() {
@@ -39,7 +39,7 @@ function Footer() {
               </Flex>
             </Flex>
 
-            <p>Todos los derechos reservados - &#169; Macropay 2022</p>
+            <p className="copyright-text">Todos los derechos reservados - &#169; Macropay 2022</p>
           </Flex>
         </section>
 
@@ -47,7 +47,19 @@ function Footer() {
             <FaceImg width="10rem" height="10rem" />
         </section>
 
-        <section>section 3</section>
+        <section className="section-3">
+          <Flex gap="small" vertical align="start">
+            <h3 className="mg-0">Conversemos!</h3>
+            <p className="mg-0">Lorem ipsum dolor sit amet consectetur</p>
+
+            <Flex gap="small">
+              <FacebookFilled className="icon"/>
+              <InstagramOutlined className="icon"/>
+              <LinkedinFilled className="icon"/>
+              <WhatsAppOutlined className="icon"/>
+            </Flex>
+          </Flex>
+        </section>
       </div>
     </footer>
   );

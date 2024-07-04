@@ -50,10 +50,25 @@
                     border-radius: 1rem;
                 }
             }
+
+            .copyright-text{
+                font-size: xx-small;
+            }
         }
 
         .section-2{
             padding-top: 10%;
+        }
+
+        .section-3{
+            h3{
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+            .icon{
+                font-size: xxx-large;
+            }
         }
     }
 }
