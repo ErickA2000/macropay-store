@@ -3,6 +3,7 @@ import TopSelling from "../components/TopSelling";
 import ViewProducts from "../components/ViewProducts";
 import "../styles/products.css";
 import { devices } from "../constants/devices";
+import { Carousel } from "antd";
 
 function Products() {
   return (
@@ -14,8 +15,22 @@ function Products() {
         <ViewProducts />
       </section>
 
-      <section>
+      <section className="carousel">
         <h3>Ofertas y Promociones</h3>
+
+        <Carousel arrows infinite={false} className="carousel-component">
+            <div className="carousel-content">
+              <img src="/img/banner-carousel.png" alt="Banner" />
+            </div>
+
+            <div className="carousel-content">
+              <img src="/img/banner-carousel.png" alt="Banner" />
+            </div>
+
+            <div className="carousel-content">
+              <img src="/img/banner-carousel.png" alt="Banner" />
+            </div>
+        </Carousel>
       </section>
 
       <section>

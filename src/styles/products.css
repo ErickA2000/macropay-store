@@ -11,3 +11,17 @@
     display: flex;
     gap: 2rem;
 }
+
+.carousel{
+    .carousel-component{
+        button{
+            color: #000;
+        }
+    }
+
+    .carousel-content{
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -9,26 +9,12 @@
     align-items: center;
     padding-top: 1rem;
 
-    h1{
-        margin: 0;
-        font-size: 2.5em;
-        color: white;
-
-        span{
-            color: #FFD300;
-            position: relative;
-        }
-
-        /* span::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
+    .content-logo{
+        img{
             width: 100%;
-            height: 10px;
-            background-color: #ffd700;
-            border-radius: 0 0 10px 10px;
-        } */
+            border-radius: 1rem;
+            /* cursor: pointer; */
+        }
     }
 }
 

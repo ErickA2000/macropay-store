@@ -14,6 +14,11 @@ function App() {
         token: {
           colorPrimary: "#FFD300",
         },
+        components: {
+          Carousel: {
+            arrowSize: 30,
+          }
+        }
       }}>
       <Header />
       <RouterProvider router={router}></RouterProvider>

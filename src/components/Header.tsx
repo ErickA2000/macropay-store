@@ -4,13 +4,15 @@ import "../styles/header.css";
 import NavHeader from "./atoms/NavHeader";
 
 function Header() {
+
   return (
     <header>
       <section className="header-part-1">
         <div className="header-part-1__content container">
-          <h1>
-            Macro<span>pay</span>
-          </h1>
+          
+          <div className="content-logo">
+            <img src="/img/macropay-logo.png" alt="Logo macropay" />
+          </div>
 
           <div className="btns">
             <Button type="primary" className="btn-register">
