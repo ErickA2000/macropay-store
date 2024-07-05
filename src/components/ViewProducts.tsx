@@ -6,16 +6,22 @@ import "../styles/viewProducts.css";
 import { Filters } from "../interfaces/filter.interface";
 import { useEffect, useState } from "react";
 import { isObjectEmpty } from "../utils/object";
-import { filterDevices } from "../utils/filter";
+import { useFilterDevices } from "../hooks/useFilterDevices";
 
 interface Props {
   filters?: Filters;
 }
 
 function ViewProducts({ filters }: Props) {
-  let devicesFilter: Device[] = [];
-  const [devicesFilterState, setDeviceFilterState] = useState<Device[]>([]);
   const [inFilter, setInFilter] = useState(false);
+
+  const applyFilter = useFilterDevices(
+    devices,
+    filters?.brand,
+    filters?.price?.min,
+    filters?.price?.max,
+    filters?.rate
+  );
 
   useEffect(() => {
     funFilter();
@@ -31,14 +37,7 @@ function ViewProducts({ filters }: Props) {
       return;
     }
 
-    devicesFilter = filterDevices(
-      devices,
-      filters.brand,
-      filters.price?.min,
-      filters.price?.max,
-      filters.rate
-    );
-    setDeviceFilterState(devicesFilter);
+    applyFilter.filter();    
 
     if (
       filters.brand &&
@@ -65,11 +64,13 @@ function ViewProducts({ filters }: Props) {
             return <CardPRoduct device={device} key={device.id} />;
           })}
 
-        {
-          inFilter && devicesFilterState.length != 0 ? devicesFilterState.map((device) => {
-            return <CardPRoduct device={device} key={device.id} />;
-          }) : inFilter && <p className="no-devices">No se han encontrado resultados</p>
-        }
+        {inFilter && applyFilter.devices.length != 0
+          ? applyFilter.devices.map((device) => {
+              return <CardPRoduct device={device} key={device.id} />;
+            })
+          : inFilter && (
+              <p className="no-devices">No se han encontrado resultados</p>
+            )}
       </div>
     </div>
   );
