@@ -19,3 +19,8 @@
 .cards::-webkit-scrollbar{
     display: none;
 }
+
+.no-devices{
+    text-align: left;
+    
+}

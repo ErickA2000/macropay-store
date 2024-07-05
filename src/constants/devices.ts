@@ -56,7 +56,7 @@ export const devices: Device[] = [
     images: [
       "https://w7.pngwing.com/pngs/276/503/png-transparent-galaxy-note-20-ultra.png",
       "https://png.pngtree.com/png-clipart/20200809/ourlarge/pngtree-samsung-galaxy-note-20-mockup-mystic-bronze-color-editable-psd-front-png-image_2323314.jpg",
-      "https://images.samsung.com/us/smartphones/galaxy-note20/pdp/gallery/canvas2/Black/Gallery-01-C2-Lockup-MysticBlack-1600x1200.jpg?$product-details-thumbnail-png$",
+      "https://isenacode.com/wp-content/uploads/2020/08/galaxy-note-20-scaled.jpg",
     ],
     price: 13999,
     rate: 3,

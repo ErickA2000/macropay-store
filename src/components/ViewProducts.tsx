@@ -6,6 +6,7 @@ import "../styles/viewProducts.css";
 import { Filters } from "../interfaces/filter.interface";
 import { useEffect, useState } from "react";
 import { isObjectEmpty } from "../utils/object";
+import { filterDevices } from "../utils/filter";
 
 interface Props {
   filters?: Filters;
@@ -21,8 +22,6 @@ function ViewProducts({ filters }: Props) {
   }, [filters, inFilter]);
 
   const funFilter = () => {
-    console.log(filters);
-    
     if (
       filters === undefined ||
       isObjectEmpty(filters) ||
@@ -32,32 +31,28 @@ function ViewProducts({ filters }: Props) {
       return;
     }
 
-    devicesFilter = devices.filter((device) => {
-      return (
-        (!filters.brand ||
-          filters.brand?.includes(device.manufacturer.toLowerCase())) &&
-        (!filters.price ||
-          !filters.price.min ||
-          device.price >= filters.price.min) &&
-        (!filters.price ||
-          !filters.price.max ||
-          device.price <= filters.price.max) &&
-        (!filters.rate || device.rate == filters.rate)
-      );
-    });
+    devicesFilter = filterDevices(
+      devices,
+      filters.brand,
+      filters.price?.min,
+      filters.price?.max,
+      filters.rate
+    );
     setDeviceFilterState(devicesFilter);
-    
-    if(devicesFilter.length == 0 && 
-      (filters.brand && filters.brand.length == 0 ) && 
-      (filters.price && filters.price.min == 0 || !filters.price.min) &&
-      (filters.price && filters.price.max == 0 || !filters.price.max) &&
-      (filters.rate && filters.rate == 0 || !filters.rate )
+
+    if (
+      filters.brand &&
+      filters.brand.length == 0 &&
+      (!filters.price ||
+        (filters.price &&
+          (!filters.price.min || filters.price.min == 0) &&
+          (filters.price.max == 0 || !filters.price.max))) &&
+      (!filters.rate || (filters.rate && filters.rate == 0))
     ) {
       setInFilter(false);
-    }else{
+    } else {
       setInFilter(true);
     }
-    
   };
 
   return (
@@ -65,13 +60,16 @@ function ViewProducts({ filters }: Props) {
       <Search />
 
       <div className="cards">
-        {devicesFilterState.length == 0 && !inFilter
-          ? devices.map((device: Device) => {
-              return <CardPRoduct device={device} key={device.id} />;
-            })
-          : devicesFilterState.map((device) => {
-              return <CardPRoduct device={device} key={device.id} />;
-            })}
+        {!inFilter &&
+          devices.map((device: Device) => {
+            return <CardPRoduct device={device} key={device.id} />;
+          })}
+
+        {
+          inFilter && devicesFilterState.length != 0 ? devicesFilterState.map((device) => {
+            return <CardPRoduct device={device} key={device.id} />;
+          }) : inFilter && <p className="no-devices">No se han encontrado resultados</p>
+        }
       </div>
     </div>
   );
